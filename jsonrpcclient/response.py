@@ -48,7 +48,7 @@ class JSONRPCResponse:
 
     ok = False
 
-    def __init__(self, jsonrpc: str, id: Any) -> None:
+    def __init__(self, jsonrpc: str, id: Any, **kwargs) -> None:
         self.jsonrpc = jsonrpc
         self.id = id
         self.fields = list()
