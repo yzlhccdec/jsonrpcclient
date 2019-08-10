@@ -51,6 +51,8 @@ class JSONRPCResponse:
     def __init__(self, jsonrpc: str, id: Any) -> None:
         self.jsonrpc = jsonrpc
         self.id = id
+        self.fields = list()
+        self.fields.append(kwargs)
 
 
 class SuccessResponse(JSONRPCResponse):
